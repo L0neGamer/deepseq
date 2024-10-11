@@ -61,7 +61,7 @@ library
   if impl(ghc >=9.0)
     build-depends: ghc-prim
 
-  build-depends: base       >= 4.12 && < 4.21
+  build-depends: base       >= 4.12 && < 4.22
   ghc-options: -Wall
 
   exposed-modules: Control.DeepSeq
