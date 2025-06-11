@@ -531,7 +531,12 @@ instance NFData1 Fixed where liftRnf _ = rwhnf
 --  This assumes that WHNF is equivalent to NF for functions.
 --
 --  @since 1.3.0.0
+--  @deprecated 1.5.1.1
+#if __GLASGOW_HASKELL__ >= 910
+instance {-# DEPRECATED "functions cannot be in normal form" #-} NFData (a -> b) where rnf = rwhnf
+#else
 instance NFData (a -> b) where rnf = rwhnf
+#endif
 
 -- Rational and complex numbers.
 
