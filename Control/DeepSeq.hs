@@ -531,7 +531,7 @@ instance NFData1 Fixed where liftRnf _ = rwhnf
 --  This assumes that WHNF is equivalent to NF for functions.
 --
 --  @since 1.3.0.0
---  @deprecated 1.5.1.1
+--  @deprecated 1.5.2.0
 #if __GLASGOW_HASKELL__ >= 910
 instance {-# DEPRECATED "NFData is not well-defined on function types. https://github.com/haskell/deepseq/issues/16" #-} NFData (a -> b) where rnf = rwhnf
 #else

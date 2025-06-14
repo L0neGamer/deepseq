@@ -2,7 +2,7 @@
 
 ## Upcoming
 
-## 1.5.1.1
+## 1.5.2.0
 
   * Deprecate function instance of NFData
     ([#16](https://github.com/haskell/deepseq/issues/16), [#109](https://github.com/haskell/deepseq/issues/109))
